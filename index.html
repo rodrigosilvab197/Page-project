@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<meta name="author" content="Emprend" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		        <link rel="stylesheet" type="text/css" href="css/demo.css" />
+        <link rel="stylesheet" type="text/css" href="css/style2.css" />
+		<script type="text/javascript" src="js/modernizr.custom.28468.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Economica:700,400italic' rel='stylesheet' type='text/css'>
+		  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="materialize/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="materialize/js/materialize.js"></script>
+  <script src="materialize/js/init.js"></script>
+
+	</head>
+	<body>
+      <!--cambiar tamaño a resizable--><header>
+			<div class="main clearfix" style="">
+							<center><a id="logo-container" href="#" class="brand-logo "><img style="margin-bottom:1em;" src="images/logo.png" width="416" height="112" class="logoCambio"></a>	</center>	
+				<nav id="menu" class="nav" style="margin:0px;">			
+					<ul>
+					<li style="background-color:black;">
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-envelop"></i>
+								</span>
+								<span>Contactanos</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-home"></i>
+								</span>
+								<span>inicio</span>
+							</a>
+						</li>
+						<li>
+							<a href="paquetes.html">
+								<span class="icon"> 
+									<i aria-hidden="true" class="icon-earth"></i>
+								</span>
+								<span>Paquetes</span>
+							</a>
+						</li>
+						<li>
+							<a href="preguntas.html">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-question"></i>
+								</span>
+								<span>Preguntas Frecuentes</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-bookmark"></i>
+								</span>
+								<span>Experiencias</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-airplane"></i>
+								</span>
+								<span>Cotiza tu viaje</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="icon">
+									<i aria-hidden="true" class="icon-envelop"></i>
+								</span>Contactanos</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+		<!-- /container -->
+		<script>
+			//  The function to change the class
+			var changeClass = function (r,className1,className2) {
+				var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+				if( regex.test(r.className) ) {
+					r.className = r.className.replace(regex,' '+className2+' ');
+			    }
+			    else{
+					r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+			    }
+			    return r.className;
+			};	
+
+			//  Creating our button in JS for smaller screens
+			var menuElements = document.getElementById('menu');
+			menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+			//  Toggle the class on click to show / hide the menu
+			document.getElementById('menutoggle').onclick = function() {
+				changeClass(this, 'navtoogle active', 'navtoogle');
+			}
+
+			// http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
+			document.onclick = function(e) {
+				var mobileButton = document.getElementById('menutoggle'),
+					buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
+
+				if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+					changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+				}
+			}
+		</script>
+		</header>
+		<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Easy management</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="images/2.png" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Revolution</h2>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="images/3.png" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Warm welcome</h2>
+					<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="images/1.png" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Quality Control</h2>
+					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="images/4.png" alt="image01" /></div>
+				</div>
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+		</script>	
+		 <div class="container">
+    <div class="section">
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-text text-darken-3"><i class="material-icons">flight</i></h2>
+            <h5 class="center">¿Porqué Viajar con nosotros?</h5> 
+            <p class="light">Contamos con los mejores paquetes de viajes, Aparte nos especializamos en viajes de lujo como lunas de miel.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-text text-darken-3"><i class="material-icons">&#xE53A;</i></h2>
+            <h5 class="center">Hoteles de lujo</h5>
+            <p class="light"> Tratamos directamente con hoteles por todo el mundo, por eso contamos con los mejores precios.</p>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center blue-text text-darken-3"><i class="material-icons">&#xE0CF;</i></h2>
+            <h5 class="center">Contáctanos</h5>
+            <p class="light">Para saber mas acerca de nuestros paquetes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h4>Nuestras recomendaciones</h4>
+        </div>
+          <div class="row">
+            <div class="col s12">
+              <ul class="collection">
+              <!--Nombre 1-->
+                <li class="collection-item avatar">
+                  <img src="images/señor1.jpeg" alt="" class="circle responsive-img">
+                  <span class="title"><b>Francisco Aguilar Orozco</b></span>
+                  <p>Excelente atención, supero nuestras expectativas!</p>
+                  <a href="#!" class="secondary-content">
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                   <i class="material-icons  blue-text text-darken-3">star</i></a>
+                </li>
+              <!--Nombre 1-->
+                <li class="collection-item avatar">
+                  <img src="images/señora1.jpg" alt="" class="circle responsive-img">
+                  <span class="title"><b>Paola Luna Sanchez</b></span>
+                  <p>Tuvimos el mejor precio, nunca pense poder hacer un viaje tan lujoso a ese precio!</p>
+                  <a href="#!" class="secondary-content">
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                   <i class="material-icons  blue-text text-darken-3">star</i></a>
+                </li>
+              <!--Nombre 1-->
+                <li class="collection-item avatar">
+                  <img src="images/señor2.jpg" alt="" class="circle responsive-img">
+                  <span class="title"><b>Oswaldo Mendoza Ramirez</b></span>
+                  <p>Hice el viaje a La india, nos dejo sorprendidos, los hoteles mejores que no los esperabamos, la comida deliciosa! </p>
+                  <a href="#!" class="secondary-content">
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                    <i class="material-icons blue-text text-darken-3">star</i>
+                   <i class="material-icons  blue-text text-darken-3">star</i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+           <center><button class="conocenos"><span>Cuentanos tu Experiencia</span></button></center>
+      </div>
+    </div>
+  </div>
+
+
+    <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Conócenos</h4>
+          <p class="left-align light">Agencia de viajes que se enfoca en ,,s,sms,s,s,s,s,ss,s.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+<a href="#">
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+    </div>
+    <div class="parallax"><img src="images/promocion.jpg" alt="Unsplashed background img 3"></div>
+  </div></a>
+
+<!--Cambiar hasta aquí -->
+
+  <footer class="page-footer blue darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col 32 s12">
+          <h5 class="white-text">Aviso de Privacidad</h5>
+          <p class="grey-text text-lighten-4">Terminos y condiciones de uso y privacidad del sitio de Turismo Gdl o tambien conocido por su nombre comercial "turismo" o por sus siglas t Para más infomación haz click
+          <a href="#modal1">aquí</a> </p>
+           <!-- Modal Structure -->
+           <div id="modal1" class="modal">
+             <div class="modal-content">
+               <h4>Avisos de privacidad</h4>
+               <h5>1.- USO Y RESTRICCIONES.</h5>
+               <p>Por la utilización del Sitio, el Paciente, Cliente,  Servidor Público, o cualquier persona física consultante expresa su consentimiento y autorización sin reservas a los Términos y condiciones de Uso y Privacidad aquí estipulados. Mediante el Uso del Sitio, podrá acceder a la página de internet y dejar sus datos para ser contactado para utilizar los servicios hospitalarios y de salud que son ofrecidos por "Centro Médico Puerta de Hierro" y/o sus hospitales y/o empresas integrantes y/o subsidiarias y/o filiales ( en lo sucesivo, cada una en lo individual "El Hospital" o en su conjunto Centro Médico Puerta de Hierro, y/o por terceros proveedores que puedan ofrecer sus servicios a través de este Sitio (en lo sucesivo "el  Prestador de Servicios").
+              Hospital de Especialidades Puerta de Hierro, S.A. de C.V. tiene el derecho de limitar, restringir, limitar, suspender, cancelar, negar el acceso al Sitio, de manera parcial o total, temporal o definitiva, en cualquier momento y sin necesidad de previo aviso, si el Paciente, Cliente,  Servidor Público o cualquier persona física consultante viola cualquiera de los términos y condiciones aquí estipulados, si comente cualquier otro acto que contravenga las disposiciones legales y leyes vigentes, si no pudiera verificarse su identidad, si cualquiera de los datos proporcionados por éste sean falsos y/o alterados, sin que lo anterior se considere un incumplimiento para Hospital de Especialidades Puerta de Hierro, S.A. de C.V., ni para "El Hospital", ni para el "Prestador de Servicios".</p>
+
+              <h5>2.- USOS PERMITIDOS.</h5>
+              <p>Al utilizar los Servicios del Sitio el Paciente, Cliente,  Servidor Público, o cualquier persona física consultante expresa acepta y reconoce que es su exclusiva responsabilidad el uso que haga de los mismos y que en todo caso deberá utilízalos de conformidad a las funcionalidades que se ofrecen y permiten en el propio Sitio y a los usos autorizados en el presente instrumento siempre y cuando no contravenga la normas de uso de la red mundial de internet, la legislación federal mexicana vigente, así como los derechos de terceros.</p>
+
+              <h5>3.- SERVICIOS OFRECIDOS POR TERCEROS. </h5>
+              <p>Los servicios ofrecidos dentro del Sitio y/o Sitios de los Prestadores de Servicios a los que usted puede acceder desde el Sitio son prestados o suministrados por  profesionales de la salud independientes a Hospital de Especialidades Puerta de Hierro, S.A. de C.V. y/o "Centro Médico Puerta de Hierro" y/o sus hospitales y/o empresas integrantes y/o subsidiarias y/o filiales. La posibilidad de accesar a dichas páginas y/o enlaces de ninguna manera implica la recomendación,  autorización, aprobación, reconocimiento, respaldo, por parte de Hospital de Especialidades Puerta de Hierro, S.A. de C.V. o sus conexas. Tampoco existe relación laboral, patronal o de subordinación alguna con los Prestadores de Servicios. Toda la información proporcionada por los Prestadores de Servicios es única y exclusivamente responsabilidad de los mismos.</p>
+
+              <h5>4.- RESTRICCIONES.</h5>
+              <p>Hospital de Especialidades Puerta de Hierro, S.A. de C.V., se reserva el derecho de condicionar, suspender, cancelar, temporal o definitivamente el acceso al Sitio de internet, en cualquier momento e iniciar las acciones legales correspondientes,  si el Paciente y/o Cliente y/o  Servidor Público y/o cualquier persona física consultante incumple cualquiera de los términos y condiciones aquí contenidos, o por la comisión de cualquier acto que contravenga a las leyes aplicables vigentes, o por cualquier dato proporcionado que resultara falso.</p>
+
+              <h5>5.- LEYES APLICABLES Y JURISDICCIÓN.</h5>
+              <p>Para todo lo relativo a la interpretación, cumplimiento y ejecución del presente acuerdo, las partes se someten a las leyes aplicables federales de los Estados Unidos Mexicanos y a los tribunales competentes de la ciudad de Guadalajara, Jalisco, renunciando expresamente a cualquier otro fuero que pudiera corresponderles en razón a sus domicilios presentes o futuros.</p>
+             </div>
+             <div class="modal-footer">
+               <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">De acuerdo</a>
+             </div>
+           </div>
+        </div>
+      </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="www.emrpend.com.mx">Emprend</a>
+      </div>
+    </div>
+  </footer>
+
+  
+
+
+	</body>
+</html>
